@@ -142,7 +142,7 @@ function blobParaBase64(blob) {
 // Enviar para o GitHub
 async function enviarContratoParaGitHub(nomeArquivo, conteudoBase64) {
   const repo = "psigiovana/contratos-assinados";
-  const token = "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"; 
+  const token = "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"; 
   const url = `https://api.github.com/repos/${repo}/contents/contratos/${nomeArquivo}`;
 
   const resposta = await fetch(url, {
@@ -169,3 +169,4 @@ async function enviarContratoParaGitHub(nomeArquivo, conteudoBase64) {
 </script>
 </body>
 </html>
+
